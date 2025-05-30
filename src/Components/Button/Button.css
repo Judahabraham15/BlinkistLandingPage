@@ -1,0 +1,21 @@
+button{
+    padding: 16px;
+    background-color:#2EE081;
+    white-space:nowrap;
+    color:#033049;
+    border-radius:10px;
+    font-size:17px;
+    font-weight:600;
+    border: none;
+    cursor:pointer;
+    transition:  0.3s ease-in-out;
+   text-align: center;
+
+}
+.button{
+    display:flex;
+    margin-left:10px;
+}
+.btn:hover{
+    background-color:hsl(148, 71%, 43%);
+}

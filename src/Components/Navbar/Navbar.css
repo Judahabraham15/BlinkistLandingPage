@@ -1,0 +1,95 @@
+.Navbar{
+width:100%;
+max-width:100vw;
+background-color: white;
+border-bottom:1px solid gray;
+display:flex;
+justify-content:space-between;
+height:10vh;
+color:#033049;
+box-sizing:border-box;
+padding:0 80px;
+position: sticky;
+z-index: 1000;
+top: 0;
+
+}
+.Navbar svg{
+    width:150px ;
+    transition: transform 0.5s ease-in-out;
+}
+.Navbar svg:hover{
+ transform: scale(1.2);
+}
+.List{
+    display:flex;
+    gap:20px;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    align-items:center;
+    
+}
+.List li{
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Nunito';
+}
+.List li:hover{
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.1);
+    color:green;
+  
+}
+@media (max-width: 768px) {
+  .Navbar {
+    padding: 0 12px;
+    height: 56px;
+    
+  }
+  .Navbar svg {
+    width: 100px !important;
+    min-width: 60px;
+    max-width: 120px;
+    height: auto;
+    margin-right: 8px;
+    display: block;
+  }
+  .List {
+    gap: 10px;
+  }
+
+}
+@media (max-width: 800px) {
+  .HideonMobile {
+    display: none !important;
+  }
+  .mobile-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+ 
+  .menu-button {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    
+  }
+  .menu-button svg {
+    width: 28px !important;
+    height: 28px !important;
+    min-width: 24px;
+    max-width: 32px;
+  }
+  .get-started{
+    border-radius: 30px !important;
+    font-size: 13px !important;
+    padding: 14px;
+    
+}
+}
+

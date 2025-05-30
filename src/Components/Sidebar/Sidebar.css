@@ -1,0 +1,88 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.51);
+  box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+  display: flex; /* Changed from none to flex */
+  flex-direction: column;
+  padding-top: 30px;
+  text-align: right;
+  flex: 1;
+  font-family: 'Nunito';
+  align-items: center;
+   transition: transform 0.4s cubic-bezier(0.77,0,0.18,1), opacity 0.3s;
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+}
+.sidebar.open {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar li {
+  list-style-type: none;
+  width: 100%;
+  font-size: 20px;
+}
+
+.sidebar li:not(:first-child) {
+  border-top: 1px solid rgba(255,255,255,0.2); /* Line above each item except first */
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 20px;
+  display: block; 
+  text-align: left;
+  
+}
+.side-svg{
+    width: 30px !important;
+    height: 30px !important;
+    
+}
+.sides {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%; 
+    padding: 0 20px; 
+    margin-bottom: 10px;
+    gap: 0; 
+    padding-left: 50px;
+}
+
+
+@media screen and (max-width:800px) {
+    .HideonMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+}
+
+@media (min-width:801px) {
+    .menu-button {
+        display: none;
+    }
+    .sidebar {
+        display: none;
+    }
+}

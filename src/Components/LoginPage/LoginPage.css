@@ -1,0 +1,356 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  z-index: 9999 ;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: 'Nunito';
+  
+}
+
+
+.login-left {
+  background-color:lightgray;
+  width: 38.125%;
+  display: flex;  
+}
+.curvy-lines{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  z-index: 999;
+}
+.logo{
+    padding: 63px 56px 0;
+}
+.login-right {
+  width: 61.875%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.login-form {
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+.login-form button{
+  width: 60%;
+  max-width: 350px;
+  margin-bottom: 12px;
+}
+.login-form h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #03314B;
+}
+
+.login-form label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 20px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.forgot-password {
+  display: block;
+  text-align: right;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color:#2EE081;
+  text-decoration: none;
+}
+
+.login-btn {
+  width: 100% !important;
+  padding: 14px;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 30px;
+  color: #03314B;
+  background-color:#2EE081;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ccc;
+}
+.divider span {
+  padding: 0 10px;
+  color: #999;
+}
+
+
+.google-btn , .facebook-btn, .apple-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  font-family: sans-serif;
+  justify-content: center;
+  padding: 10px 16px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+   font-weight: 600;
+  cursor: pointer;
+  justify-content: center;
+  font-family: 'Nunito';
+  max-width: 350px;
+  margin: 0 auto 12px;
+  transition: background 0.4s ease-in-out;
+  
+}
+.google-btn:hover{
+  background:  #EFF5F3;
+}
+.google-btn svg {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.facebook-btn {
+  background-color: #3b5998;
+  color: white;
+
+}
+.facebook-btn:hover{
+  background: #3b5898bb;
+}
+
+.apple-btn {
+  background-color: black;
+  color: white;
+}
+.apple-btn:hover{
+  background: rgba(0, 0, 0, 0.642);
+}
+
+.signup-text {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+.signup-text a {
+  color:#2EE081;
+  font-weight: bold;
+  text-decoration: none;
+}
+.input-wrapper{
+  position: relative;
+  width: 100%;
+}
+.err-message,
+.err-messages {
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+  text-align: right;
+  width: auto;
+  pointer-events: none;
+}
+.err-messages{
+  top: 50%;
+}
+.svg svg{
+  width: 16px;
+  
+
+}
+
+@media screen and (max-width: 695px) {
+  .login-container {
+    flex-direction: column;
+    width: 105vw;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  .login-left {
+    width: 100%;
+    min-height: 200px;
+    height: 250px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .curvy-lines{
+    display: none;
+  }
+  .logo {
+    padding: 30px 0 0 10px;
+    text-align: center;
+    }
+.logo svg{
+  width: 150px
+}
+  .login-right {
+    width: 100%;
+    min-height: calc(100vh - 120px);
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: white;
+    padding: 20px 0;
+  }
+
+  .login-form {
+     width: 85%;
+    max-width: 100%;
+    margin: -80px auto 0 auto; 
+    padding: 24px 16px;
+    background-color: white;
+    border-radius: 20px;
+    z-index: 2;
+    position: relative;
+     box-shadow: 0 4px 24px rgba(0,0,0,0.50); /* Add box shadow */
+  }
+.login-form input{
+  width: 80%;
+}
+  .login-form button,
+  .google-btn,
+  .facebook-btn,
+  .apple-btn {
+    width: 80% !important;
+    max-width: 100%;
+    margin-bottom: 12px;
+  }
+  .login-form label{
+    font-size: 0.9rem;  
+  }
+.login-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .social-btn-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .google-btn,
+  .facebook-btn,
+  .apple-btn {
+     width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    min-height: 36px !important;
+    max-width: 36px !important;
+    max-height: 36px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 6px 0 0 !important;
+    font-size: 0 !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .google-btn span,
+  .facebook-btn span,
+  .apple-btn span {
+    display: none;
+  }
+
+  .google-btn svg,
+  .facebook-btn svg,
+  .apple-btn svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+}
+@media(min-width:695px) and (max-width:735px){
+ .social-btn-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .google-btn,
+  .facebook-btn,
+  .apple-btn {
+     width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    min-height: 36px !important;
+    max-width: 36px !important;
+    max-height: 36px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 6px 0 0 !important;
+    font-size: 0 !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .google-btn span,
+  .facebook-btn span,
+  .apple-btn span {
+    display: none;
+  }
+
+  .google-btn svg,
+  .facebook-btn svg,
+  .apple-btn svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+  .login-container{
+    height: 105vh;
+  }
+}
+@media (min-width:736px) and (max-width:1024px){
+  .login-container{
+    height: 105vh;
+  }
+  .login-right{
+    padding-bottom: 10px;
+  }
+}

@@ -1,0 +1,234 @@
+.container2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+}
+
+
+.container-text{
+    display: flex;
+    flex-direction: column;
+    max-width:662px;
+    text-align: center;
+    margin: 0 239px 56px;
+}
+.container-text p{
+    width: 100%;
+    max-width: 440px;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5em;
+    color: #6B6D76;
+    font-size: 18px;
+}
+.container-text h1{
+    width: 100%;
+    max-width: 440px;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5em;
+    color: #033049;
+}
+.ancor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:60%;
+    height: auto;
+    padding: 15px 10px;
+    height: 100%;
+    background: #EFF5F3;
+    box-shadow: 0 10px 10px rgba(20, 28, 49, .03), 0 2px 6px rgba(0, 0, 0, 0.159);
+    border-radius: 12px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+.ancor:hover{
+    border: 2px solid #21b968 ;
+    box-shadow: none;
+
+}
+
+.ancor h3{
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 3px;
+    font-weight: 500;
+    max-width: 200px;
+    font-size: 17px;
+    
+}
+.img-box{
+    flex-shrink: 0;
+    margin-right: 14px;
+}
+.img-box svg{
+    position: relative;
+    top: 3px;
+    padding-left: 25px;
+}
+.fake-buttons {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    width: 100%;
+    margin-top: 20px;
+    
+ 
+}
+.btn-category {
+    display: flex;
+    flex-direction: column; /* Stack content vertically inside each button */
+    align-items: center; /* Center-align content within each button */
+    justify-content: center;
+    width: 22%; /* Ensure 4 buttons fit in a row (100% / 4 = 25%, minus gap) */
+    padding: 10px 0px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out; 
+}
+.story-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center text inside the container */
+    height: 100%; 
+    margin-bottom: 72px;
+}
+.story-text h3{
+    margin-bottom: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #033049;
+}
+.story-text h4{
+    font-size: 18px;
+    margin-bottom: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #033049;
+}
+@media(max-width: 576px){
+    .container2{
+        margin-top: 50px;
+    }
+.container-text{
+    text-align: left;
+    margin-bottom: 16px;
+    width: 95%;
+}
+.container-text h1{
+    font-size: 30px;
+}
+.fake-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-category {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .ancor {
+    width: 95%;
+    min-width: 0;
+    max-width: 350px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .story-text{
+    h3{
+        font-size: 16px;
+    }
+    h4{
+        font-size: 18px;
+    }
+  }
+}
+@media(min-width: 577px) and (max-width: 768px){
+    .container2{
+        margin-top: 50px;
+    }
+.container-text{
+    text-align: left;
+    margin-bottom: 16px;
+    width: 95%;
+}
+.container-text h1{
+    font-size: 35px;
+}
+.fake-buttons {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px 0; 
+  }
+  .btn-category {
+    width: 48%;   /* Two per row */
+    margin-bottom: 16px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  .ancor {
+    width: 90%;
+    min-width: 0;
+    max-width: 220px; /* Reduce width for this range */
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .story-text{
+    h3{
+        font-size: 16px;
+    }
+    h4{
+        font-size: 18px;
+    }
+  }
+}
+@media(min-width: 769px) and (max-width: 990px){
+     .container2{
+        margin-top: 50px;
+    }
+.container-text{
+    text-align: left;
+    margin-bottom: 16px;
+    width: 95%;
+}
+.container-text h1{
+    font-size: 35px;
+}
+  .btn-category {
+    width: 48%;   /* Two per row */
+    margin-bottom: 16px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .ancor {
+    width: 85%;
+    height: auto;
+    min-width: 0;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .story-text{
+    h3{
+        font-size: 16px;
+    }
+    h4{
+        font-size: 18px;
+    }
+  }
+}
+@media (min-width:991px) and (max-width:1063px){
+    .ancor{
+        width: 70%;
+    }
+}

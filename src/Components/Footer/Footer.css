@@ -1,0 +1,344 @@
+.footer{
+    width:100%;
+    max-width:100vw;
+    height: 100vh;
+    background-color: #EFF5F3;
+    border-top:1px solid gray;
+    margin: 0;
+}
+.footer-pag{
+        display:flex;
+    justify-content:space-between;
+    color:#033049;
+    box-sizing:border-box;
+    padding:0 150px;
+    margin-top: -20px;
+}
+hr{
+    margin-top: -20px;
+ margin-left: 100px;
+ margin-right: 100px;
+}
+.footer-pag svg {
+    width: 250px;
+    height: auto;
+}
+.lists{
+    display:flex;
+    gap:10px;
+    list-style-type:none;
+    margin:0;
+    padding:0 100px;
+    align-items:center;
+}
+.app{
+    width: 200px;
+}
+.class-lists{
+    display: flex;
+    padding: 85px 180px 54px;
+    flex-direction: row;    
+}
+.quick-links , .quick-links2{
+    width: 17%;
+   
+}
+.quick-links2{
+    margin-left: 8%;
+}
+.footer-menu{
+    margin: 0;
+    flex-wrap: wrap;
+}
+.footer-menu li{
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Nunito';
+    margin-bottom: 14px;
+    letter-spacing: normal;
+    transition: transform 0.5s ease;
+}
+.footer-menu li:hover{
+    color: green;
+    transform: translateX(19%);
+}
+.menu{
+    font-size: 20px;
+    color: #033049;
+    margin-bottom: 10px;
+    font-family: 'Nunito';
+    font-weight: 800;
+}
+.img-footer{
+    margin-right: 5px;
+    max-width: 17px;
+    margin-top: -2px;
+    flex-shrink: 0;
+}
+.img-footer img{
+    max-width: 100%;
+    vertical-align: middle;
+}  
+.footer-social{
+    padding: 26px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.first-text{
+padding-left: 80px;
+}
+.first-text p{
+    color: #033049;
+    font-family: 'Nunito';
+}
+.card {
+  width: fit-content;
+  height: fit-content;
+   padding-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media (max-width:576px) {
+  .footer {
+    height: auto;
+    min-height: 400px;
+    padding: 24px 0 0 0;
+    border-top: 1px solid gray;
+  }
+  .footer-pag {
+    flex-direction: column;
+    padding: 0 16px;
+    margin-top: 0;
+    align-items: center;
+    gap: 18px;
+  }
+  hr {
+    margin: 16px 0;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .footer-pag svg {
+    width: 200px;  
+  }
+  .lists {
+    flex-direction: column;
+    gap: 0;
+    padding: 0 8px;
+    
+  }
+    .lists .app:last-child {
+    margin-bottom: -50px;     
+  }
+  .app {
+    width: 100%;
+    max-width: 150px;
+
+  
+  }
+  .class-lists {
+    flex-direction: column;
+    padding: 24px 8px 16px 8px;
+    gap: 18px;
+  }
+  .quick-links, .quick-links2 {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 12px;
+  }
+  .footer-menu li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-left: 0;
+    transform: none !important;
+  }
+  .menu {
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+  .img-footer {
+    margin-right: 4px;
+    max-width: 15px;
+    margin-top: 0;
+  }
+  .footer-social {
+    flex-direction: column;
+    padding: 12px 0;
+    padding-left: 10px;
+    gap: 12px;
+    align-items: center;
+  }
+  .first-text {
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+  .card {
+    padding-right: 0;
+    gap: 12px;
+  }
+  .socialContainer {
+    width: 40px;
+    height: 40px;
+  }
+  .socialSvg {
+    width: 14px;
+  }
+}
+@media(min-width: 577px) and (max-width:1300px){
+    .footer {
+    height: auto;
+    min-height: 400px;
+    padding: 24px 0 0 0;
+    border-top: 1px solid gray;
+  }
+  .footer-pag {
+    display: flex;
+    padding: 0 24px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+  }
+  hr {
+    margin: 16px 0;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .footer-pag svg {
+    width: 180px;  
+  }
+  .lists {
+    display:flex;
+    gap:10px;
+    margin:0;
+    padding:0 8px;
+    align-items:center;
+  }
+  .app {
+    width: 100%;
+    max-width: 150px;
+  }
+  .class-lists {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 24px 8px 16px 30px;
+    gap: 18px;
+  }
+  .class-lists > * {
+  min-width: 180px;        /* Adjust as needed for your design */
+  flex: 1 1 180px;         /* Grow and shrink, but not smaller than min-width */
+  box-sizing: border-box;
+}
+  .quick-links, .quick-links2 {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 12px;
+  }
+  .footer-menu li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-left: 0;
+    transform: none !important;
+  }
+  .menu {
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+  .img-footer {
+    margin-right: 4px;
+    max-width: 15px;
+    margin-top: 0;
+  }
+  .footer-social {
+    flex-direction: column;
+    padding: 12px 0;
+    padding-left: 10px;
+    gap: 12px;
+    align-items: center;
+  }
+  .first-text {
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+  .card {
+    padding-right: 0;
+    gap: 12px;
+  }
+  .socialContainer {
+    width: 40px;
+    height: 40px;
+  }
+  .socialSvg {
+    width: 14px;
+  }
+
+}
+

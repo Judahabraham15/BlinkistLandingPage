@@ -1,0 +1,280 @@
+.activity-section {
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    position: relative;
+  }
+  .activity-text{
+    text-align: center; 
+    margin-bottom: 20px;
+  }
+  .activity-text h1{
+    font-size: 40px;
+    font-family: 'Segoe UI';
+    color: #033049;
+  }
+  .activity-text p{
+    margin-top: 10px;
+    font-size: 18px;
+    color:#6B6D76;
+    font-family: 'Nunito';
+  }
+  .activity-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 220px;
+    border-radius: 20px;
+   
+  
+  }
+  .activity-image {
+    width: 105%;
+    height: 300px;
+    object-fit: cover;
+    display: inline-block;
+    border-radius: 18px;
+  }
+  .cards-container{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 50px;
+    justify-content: center;
+    width: 100%;
+  }
+  .activity-label {
+    font-family: 'Nunito';
+    position: absolute;
+    top: -10px;
+    left:50%;
+    transform: translateX(-50%);
+    background: #e7e6ff;
+    color: black;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+  .cards-container .activity-card:first-child{
+    margin-top: 50px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+   .activity-card:nth-child(3){
+    margin-top: 50px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+  .cards-container .activity-card:nth-child(1) .activity-label {
+    background-color: #e7e6ff; 
+}
+
+.cards-container .activity-card:nth-child(2) .activity-label {
+    background-color: #ffd6e7; 
+}
+
+.cards-container .activity-card:nth-child(3) .activity-label {
+    background-color: #d6ffe7; 
+}
+
+.cards-container .activity-card:nth-child(4) .activity-label {
+    background-color: #d6e7ff; 
+}
+.story-text h4{
+    font-family: 'Nunito' !important;
+}
+.story-text h5{
+    color: #6B6D76;
+    font-family: 'Nunito';
+}
+@media (max-width:576px){
+  .activity-section {
+    padding: 20px 0 0 0; /* Remove side padding to allow full scroll */
+    overflow: visible;
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    gap: 26px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    justify-content: flex-start; 
+  }
+  .activity-card {
+    width: 220px;
+    min-width: 220px;
+    max-width: 220px;
+    flex: 0 0 220px;
+    margin-top: 0 !important;
+    margin-bottom: 0;
+    border-radius: 20px;
+   
+    
+  }
+
+  .activity-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display:block;
+    border-radius: 18px;
+  }
+  .activity-text{
+    align-items: center;
+    justify-content: center;
+  }
+  .activity-text h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .activity-text p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .story-text h3{
+    font-family: 'Nunito' !important;
+    font-size: 13px !important;
+    text-align: center;
+  }
+}
+@media (min-width:576px) and (max-width:768px){
+  .activity-section {
+    padding: 20px 0 0 0; /* Remove side padding to allow full scroll */
+    overflow: visible;
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    gap: 26px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    justify-content: flex-start; 
+  }
+  .activity-card {
+    width: 220px;
+    min-width: 220px;
+    max-width: 220px;
+    flex: 0 0 220px;
+    margin-top: 0 !important;
+    margin-bottom: 0;
+    border-radius: 20px;
+   
+    
+  }
+
+  .activity-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display:block;
+    border-radius: 18px;
+  }
+  .activity-text{
+    align-items: center;
+    justify-content: center;
+  }
+  .activity-text h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .activity-text p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .story-text h3{
+    font-family: 'Nunito' !important;
+    font-size: 13px !important;
+    text-align: center;
+  }
+}
+
+@media (min-width:769px) and (max-width:990px){
+  .activity-section {
+    padding: 20px 0 0 0; /* Remove side padding to allow full scroll */
+    overflow: visible;
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    gap: 26px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    justify-content: flex-start; 
+     scrollbar-width: none;        
+    -ms-overflow-style: none; 
+  }
+.cards-container::-webkit-scrollbar {
+  display: none;                
+}
+  .activity-card {
+    width: 220px;
+    min-width: 220px;
+    max-width: 220px;
+    flex: 0 0 220px;
+    margin-top: 0 !important;
+    margin-bottom: 0;
+    border-radius: 20px;
+   
+    
+  }
+
+  .activity-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display:block;
+    border-radius: 18px;
+  }
+  .activity-text{
+    align-items: center;
+    justify-content: center;
+  }
+  .activity-text h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .activity-text p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .story-text h3{
+    font-family: 'Nunito' !important;
+    font-size: 18px !important;
+    text-align: center;
+  }
+    .cards-container .activity-card:first-child{
+    margin-top: 50px !important;
+  }
+   .activity-card:nth-child(3){
+    margin-top: 50px !important;
+    
+  }
+}

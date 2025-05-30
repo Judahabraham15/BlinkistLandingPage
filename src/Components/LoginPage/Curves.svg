@@ -1,0 +1,10 @@
+
+    <div className='background-curves'>
+         <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" fill="none">
+    <path d="M0 50 Q200 0 400 50 T800 50" stroke="white" strokeWidth="1" />
+    <path d="M0 100 Q200 50 400 100 T800 100" stroke="white" strokeWidth="1" />
+    <path d="M0 150 Q200 100 400 150 T800 150" stroke="white" strokeWidth="1" />
+    <path d="M0 200 Q200 150 400 200 T800 200" stroke="white" strokeWidth="1" />
+    <path d="M0 250 Q200 200 400 250 T800 250" stroke="white" strokeWidth="1" />
+  </svg>
+    </div>

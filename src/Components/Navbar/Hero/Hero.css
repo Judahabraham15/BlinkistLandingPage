@@ -1,0 +1,233 @@
+.Hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;   
+    color: #033049;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-left:80px ;
+    margin: 0 48px;
+    transform: translateY(-10%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column; 
+    align-items: flex-start; 
+  
+}
+.content h1{
+    line-height: 1.5em;
+    width: 100%;
+    text-align: left;
+    max-width: 380px;
+    font-size: 50px;
+}
+.content p{
+    line-height: 2.0em;
+    font-size: 18px;
+    width: 100%;
+    max-width: 400px;
+}
+#ChangeText{
+    font-style:italic ;
+    font-weight: 400;
+}
+.img-content img{
+  max-width: 100%;
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  transform: translate(-50% , -20%);
+  border-radius: 18px;
+  
+}
+#Changed{
+    background-color: burlywood;
+    font-size: 15px;
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-weight: 500;
+}
+#Changes{
+    font-size: 15px;
+    border-radius:12px ;
+    font-weight: 500;
+    padding: 2px 8px;
+    background-color:greenyellow;
+}
+#Change{
+    font-size: 15px;
+    border-radius:12px ;
+    font-weight: 500;
+    padding: 2px 8px;
+    background-color:lightblue;
+}
+
+#ToggleText {
+    display: inline-flex; /* Ensures the SVG or text stays inline */
+    align-items: center; 
+    gap: 4px;
+    font-size: inherit; 
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+#ToggleText.show{
+    opacity: 1;
+}
+@media(max-width:576px){
+      .Hero {
+    flex-direction: column;
+    height: auto;
+    padding: 16px 0;
+    align-items: center;
+  }
+
+  .content {
+    padding-left: 16px;
+    margin: 0 8px;
+    align-items: center;
+    width: 100%;
+    transform: none;
+    margin-bottom: 30px;
+  }
+
+  .content h1 {
+    font-size: 28px;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .content p {
+    font-size: 15px;
+    max-width: 350px;
+    line-height: 1.6em;
+    text-align: center;
+  }
+#Changed{
+    background-color: burlywood;
+    font-size: 12px;
+    border-radius: 12px;
+    padding: 2px 5px;
+    font-weight: 500;
+}
+#Changes{
+    font-size: 12px;
+    border-radius:12px ;
+    font-weight: 500;
+    padding: 2px 5px;
+    background-color:greenyellow;
+}
+#Change{
+    font-size: 12px;
+    border-radius:12px ;
+    font-weight: 500;
+    padding: 2px 5px;
+    background-color:lightblue;
+}
+  .img-content img {
+    width:280px ;
+    max-width: 100%;
+    
+    transform: none;
+    margin: 16px 0 0 0;
+    border-radius: 12px;
+  }
+}
+@media(min-width:577px) and (max-width:768px){
+   .Hero {
+    flex-direction: column;
+    height: auto;
+    padding: 16px 0;
+    align-items: center;
+    font-family: 'Nunito' !important;
+  }
+  .content {
+    padding-left: 16px;
+    margin: 0 8px;
+    align-items: center;
+    width: 100%;
+    transform: none;
+    margin-bottom: 30px;
+  }
+
+  .content h1 {
+    font-size: 38px;
+    max-width: 380px;
+    text-align: center;
+  }
+
+  .content p {
+    font-size: 20px;
+    max-width: 380px;
+    line-height: 1.6em;
+    text-align: center;
+  }
+#Changed{
+    background-color: burlywood;
+    font-size: 14px;
+    border-radius: 12px;
+    padding: 4px 8px;
+    font-weight: 500;
+}
+#Changes{
+    font-size: 14px;
+    border-radius:12px ;
+    font-weight: 500;
+    padding: 4px 8px;
+    background-color:greenyellow;
+}
+#Change{
+    font-size: 14px;
+    border-radius:12px ;
+    font-weight: 500;
+    padding: 4px 8px;;
+    background-color:lightblue;
+}
+  .img-content img {
+    width:280px ;
+    max-width: 100%;
+    
+    transform: none;
+    margin: 16px 0 0 0;
+    border-radius: 12px;
+  }
+}
+@media (min-width: 769px) and (max-width:980px){
+  .content{
+    padding: 0 0 0 30px;
+  }
+  .content h1{
+    font-size: 35px;
+    max-width: 420px;
+  }
+  .content p{
+    max-width: 400px;
+    text-align: left;
+  }
+  .img-content img{
+    width: 400px;
+    max-width: 100%;
+    transform: translate(-10% , -40%);
+    border-radius: 18px;
+  }
+}
+@media (min-width:981px) and (max-width:1063px){
+  .content h1{
+    font-size: 38px;
+  }
+  .content{
+    padding: 0 0 0 50px;
+  }
+  .img-content img{
+    width: 500px;
+
+  }
+}
