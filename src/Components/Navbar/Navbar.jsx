@@ -4,9 +4,7 @@ import Button from '../Button/Button'
 import Sidebar from '../Sidebar/Sidebar'
 
 const Navbar = () => {
-   function Clicked(){
-    window.open('/login' , '_blank')
-   }
+
    function showSidebar(){
   document.querySelector('.sidebar').classList.add('open');
 
@@ -30,7 +28,7 @@ const Navbar = () => {
             <li className='HideonMobile'>For Buisness</li>
             <li className='HideonMobile'>For Individuals</li>
                   <div className="mobile-actions">
-              <Button className={"get-started"} title={"Get Started"} onClick={Clicked}/>
+              <Button className={"get-started"} title={"Get Started"}/>
                         <li className="menu-button"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"onClick={showSidebar} height="30px" viewBox="0 -960 960 960" width="50px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
                         </svg>
                         </a>
