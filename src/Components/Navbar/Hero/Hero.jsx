@@ -34,31 +34,7 @@ const Hero = () => {
 
   return (
     <div className="Hero">
-       {/*   <svg
-        className="curvy-lines"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 900"
-        preserveAspectRatio="none"
-      >
-        <path
-          stroke="#e0e0e0"
-          strokeWidth="2"
-          fill="none"
-          d="M100,100 C250,20 400,180 550,100 C700,20 850,180 1000,100 S1200,20 1300,100"
-        />
-        <path
-          stroke="#e0e0e0"
-          strokeWidth="2"
-          fill="none"
-          d="M150,200 C300,100 450,300 600,200 C750,100 900,300 1050,200 S1200,100 1300,200"
-        />
-        <path
-          stroke="#e0e0e0"
-          strokeWidth="2"
-          fill="none"
-          d="M50,300 C200,150 350,450 500,300 C650,150 800,450 950,300 S1100,150 1250,300"
-        />
-      </svg>*/} 
+         
 
       <div className="content">
         <h1>
