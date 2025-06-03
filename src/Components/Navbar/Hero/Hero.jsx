@@ -12,7 +12,9 @@ const Hero = () => {
     const TextArray = ['Blinkist', <Svg />]; 
     let index = 0;
     const TextElement = document.getElementById('ToggleText')
-    function toggleText() {
+    
+
+    const toggleText = () => { 
         setIsVisible(false);
         TextElement.style.opacity  = 0
         setTimeout(()=>{
@@ -22,9 +24,8 @@ const Hero = () => {
       setIsVisible(true);
       index = (index + 1) % TextArray.length;  
         } , 500)
-     
-    }
-
+     }
+    
     const interval = setInterval(() => {
       toggleText();
     }, 2000);

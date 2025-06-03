@@ -7,6 +7,8 @@ import play from '../../assets/play.png'
 import envelope from '../../assets/envelope (3).png'
 import Location from '../../assets/location.png'
 import Svg from '../SVG/Svg';
+import vite from '../../assets/vite.svg'
+import react from '../../assets/react.svg'
 
 const Footer = () => {
    
@@ -112,7 +114,7 @@ const Footer = () => {
             <hr></hr>
             <div className="footer-social">
               <div className="first-text">
-                <p>Crafted by Judah4Good © 2025 Blinkist | All Rights Reserved</p>
+                <p>Crafted by Judah4Good with <img src={vite} className='small-logos'/>+<img src={react} className='small-logos' /> © 2025 Blinkist | All Rights Reserved</p>
               </div>
               <div className="card">
   <a className="socialContainer containerOne" href="#">
